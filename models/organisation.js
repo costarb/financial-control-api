@@ -41,7 +41,9 @@ const Organisation = mongoose.model('Organisation', organisationSchema);
 
 function validateOrganisation(organisation) {
   const schema = Joi.object({
-    name: Joi.string().min(3).required()
+    name: Joi.string().min(3).required(),
+    descripton: Joi.string(),
+    isActive: Joi.bool()
   });
 
   return schema.validate(organisation);

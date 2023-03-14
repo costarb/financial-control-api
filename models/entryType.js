@@ -25,7 +25,9 @@ const EntryType = mongoose.model('EntryType', entryTypeSchema);
 
 function validateEntryType(genre) {
   const schema = Joi.object({
-    name: Joi.string().min(3).required()
+    name: Joi.string().min(3).required(),
+    descripton: Joi.string(),
+    isActive: Joi.bool()
   });
 
   return schema.validate(genre);

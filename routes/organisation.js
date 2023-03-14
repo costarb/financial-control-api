@@ -2,13 +2,19 @@ const {Organisation, validate} = require('../models/organisation');
 const mongoose = require('mongoose');
 const express = require('express');
 const router = express.Router();
+// var cors = require('../config/cors');
+var cors = require('cors');
 
-router.get('/', async (req, res) => {
+router
+.options("/", cors())
+.get('/', cors(), async (req, res) => {
   const organisations = await Organisation.find().sort('name');
   res.send(organisations);
 });
 
-router.post('/', async (req, res) => {
+router
+.options("/", cors())
+.post('/', async (req, res) => {
   const { error } = validate(req.body); 
   if (error) return res.status(400).send(error.details[0].message);
 
@@ -23,7 +29,9 @@ router.post('/', async (req, res) => {
   res.send(organisation);
 });
 
-router.put('/:id', async (req, res) => {
+router
+.options("/", cors())
+.put('/:id', async (req, res) => {
   const { error } = validate(req.body); 
   if (error) return res.status(400).send(error.details[0].message);
 
@@ -40,7 +48,9 @@ router.put('/:id', async (req, res) => {
   res.send(organisation);
 });
 
-router.delete('/:id', async (req, res) => {
+router
+.options("/", cors())
+.delete('/:id', async (req, res) => {
   const organisation = await Organisation.findByIdAndRemove(req.params.id);
 
   if (!organisation) return res.status(404).send('The organisation with the given ID was not found.');
@@ -48,7 +58,9 @@ router.delete('/:id', async (req, res) => {
   res.send(organisation);
 });
 
-router.get('/:id', async (req, res) => {
+router
+.options("/", cors())
+.get('/:id', async (req, res) => {
   const organisation = await Organisation.findById(req.params.id);
 
   if (!organisation) return res.status(404).send('The organisation with the given ID was not found.');

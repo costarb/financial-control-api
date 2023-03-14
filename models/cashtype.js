@@ -11,7 +11,6 @@ const cashTypeSchema = new mongoose.Schema({
   },
   descripton: {
     type: String,
-    require: true,
     minlength: 5,
     maxlength: 100
   },
@@ -23,12 +22,14 @@ const cashTypeSchema = new mongoose.Schema({
 
 const CashType = mongoose.model('CashType', cashTypeSchema);
 
-function validateCashType(genre) {
+function validateCashType(cashtype) {
   const schema = Joi.object({
-    name: Joi.string().min(3).required()
+    name: Joi.string().min(3).required(),
+    descripton: Joi.string(),
+    isActive: Joi.bool()
   });
 
-  return schema.validate(genre);
+  return schema.validate(cashtype);
 }
 
 exports.cashTypeSchema = cashTypeSchema;

@@ -107,3 +107,115 @@
 {"level":"info","message":"Connected to MongoDB..."}
 {"level":"info","message":"Listening on port 8092..."}
 {"level":"info","message":"Connected to MongoDB..."}
+{"level":"info","message":"Listening on port 8092..."}
+{"level":"info","message":"Connected to MongoDB..."}
+{"level":"info","message":"Listening on port 8092..."}
+{"level":"info","message":"Connected to MongoDB..."}
+{"level":"info","message":"Listening on port 8092..."}
+{"level":"info","message":"Connected to MongoDB..."}
+{"level":"info","message":"Listening on port 3000..."}
+{"level":"info","message":"Connected to MongoDB..."}
+{"level":"info","message":"Listening on port 3000..."}
+{"level":"info","message":"Connected to MongoDB..."}
+{"level":"info","message":"Listening on port 3000..."}
+{"level":"info","message":"Connected to MongoDB..."}
+{"level":"info","message":"Listening on port 3000..."}
+{"level":"info","message":"Connected to MongoDB..."}
+{"level":"info","message":"Listening on port 3000..."}
+{"level":"info","message":"Connected to MongoDB..."}
+{"level":"info","message":"Listening on port 3000..."}
+{"level":"info","message":"Connected to MongoDB..."}
+{"level":"info","message":"Listening on port 3000..."}
+{"level":"info","message":"Connected to MongoDB..."}
+{"level":"info","message":"Listening on port 3000..."}
+{"level":"info","message":"Connected to MongoDB..."}
+{"_message":"Organisation validation failed","errors":{"descripton":{"kind":"minlength","message":"Path `descripton` (`SEDE`) is shorter than the minimum allowed length (5).","name":"ValidatorError","path":"descripton","properties":{"message":"Path `descripton` (`SEDE`) is shorter than the minimum allowed length (5).","minlength":5,"path":"descripton","type":"minlength","value":"SEDE"},"value":"SEDE"},"name":{"kind":"minlength","message":"Path `name` (`SEDE`) is shorter than the minimum allowed length (5).","name":"ValidatorError","path":"name","properties":{"message":"Path `name` (`SEDE`) is shorter than the minimum allowed length (5).","minlength":5,"path":"name","type":"minlength","value":"SEDE"},"value":"SEDE"}},"level":"error","message":"Organisation validation failed: name: Path `name` (`SEDE`) is shorter than the minimum allowed length (5)., descripton: Path `descripton` (`SEDE`) is shorter than the minimum allowed length (5). Organisation validation failed: name: Path `name` (`SEDE`) is shorter than the minimum allowed length (5)., descripton: Path `descripton` (`SEDE`) is shorter than the minimum allowed length (5).","stack":"ValidationError: Organisation validation failed: name: Path `name` (`SEDE`) is shorter than the minimum allowed length (5)., descripton: Path `descripton` (`SEDE`) is shorter than the minimum allowed length (5).\n    at Document.invalidate (C:\\Users\\rob_b\\source\\repos\\git\\financial-control-api\\node_modules\\mongoose\\lib\\document.js:3081:32)\n    at C:\\Users\\rob_b\\source\\repos\\git\\financial-control-api\\node_modules\\mongoose\\lib\\document.js:2869:17\n    at C:\\Users\\rob_b\\source\\repos\\git\\financial-control-api\\node_modules\\mongoose\\lib\\schematype.js:1350:9\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)"}
+{"_message":"Organisation validation failed","errors":{"name":{"kind":"minlength","message":"Path `name` (`SEDE`) is shorter than the minimum allowed length (5).","name":"ValidatorError","path":"name","properties":{"message":"Path `name` (`SEDE`) is shorter than the minimum allowed length (5).","minlength":5,"path":"name","type":"minlength","value":"SEDE"},"value":"SEDE"}},"level":"error","message":"Organisation validation failed: name: Path `name` (`SEDE`) is shorter than the minimum allowed length (5). Organisation validation failed: name: Path `name` (`SEDE`) is shorter than the minimum allowed length (5).","stack":"ValidationError: Organisation validation failed: name: Path `name` (`SEDE`) is shorter than the minimum allowed length (5).\n    at Document.invalidate (C:\\Users\\rob_b\\source\\repos\\git\\financial-control-api\\node_modules\\mongoose\\lib\\document.js:3081:32)\n    at C:\\Users\\rob_b\\source\\repos\\git\\financial-control-api\\node_modules\\mongoose\\lib\\document.js:2869:17\n    at C:\\Users\\rob_b\\source\\repos\\git\\financial-control-api\\node_modules\\mongoose\\lib\\schematype.js:1350:9\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)"}
+{"level":"info","message":"Listening on port 3000..."}
+{"level":"info","message":"Connected to MongoDB..."}
+{"level":"info","message":"Listening on port 3000..."}
+{"level":"info","message":"Connected to MongoDB..."}
+{"level":"info","message":"Listening on port 3000..."}
+{"level":"info","message":"Connected to MongoDB..."}
+{"level":"info","message":"Listening on port 3000..."}
+{"level":"info","message":"Connected to MongoDB..."}
+{"level":"info","message":"Listening on port 3000..."}
+{"level":"info","message":"Connected to MongoDB..."}
+{"level":"info","message":"Listening on port 3000..."}
+{"level":"info","message":"Connected to MongoDB..."}
+{"level":"info","message":"Listening on port 3000..."}
+{"level":"info","message":"Connected to MongoDB..."}
+{"level":"info","message":"Listening on port 3000..."}
+{"level":"info","message":"Connected to MongoDB..."}
+{"level":"info","message":"Listening on port 3000..."}
+{"level":"info","message":"Connected to MongoDB..."}
+{"level":"info","message":"Listening on port 3000..."}
+{"level":"info","message":"Connected to MongoDB..."}
+{"level":"info","message":"Listening on port 3000..."}
+{"level":"info","message":"Connected to MongoDB..."}
+{"level":"info","message":"Listening on port 3000..."}
+{"level":"info","message":"Connected to MongoDB..."}
+{"level":"info","message":"Listening on port 3000..."}
+{"level":"info","message":"Connected to MongoDB..."}
+{"level":"info","message":"Listening on port 3000..."}
+{"level":"info","message":"Connected to MongoDB..."}
+{"level":"info","message":"Listening on port 3000..."}
+{"level":"info","message":"Connected to MongoDB..."}
+{"level":"info","message":"Listening on port 3000..."}
+{"level":"info","message":"Connected to MongoDB..."}
+{"level":"info","message":"Listening on port 3000..."}
+{"level":"info","message":"Connected to MongoDB..."}
+{"level":"info","message":"Listening on port 3000..."}
+{"level":"info","message":"Connected to MongoDB..."}
+{"level":"info","message":"Listening on port 3000..."}
+{"level":"info","message":"Connected to MongoDB..."}
+{"level":"info","message":"Listening on port 3000..."}
+{"level":"info","message":"Connected to MongoDB..."}
+{"level":"info","message":"Listening on port 3000..."}
+{"level":"info","message":"Connected to MongoDB..."}
+{"level":"info","message":"Listening on port 3000..."}
+{"level":"info","message":"Connected to MongoDB..."}
+{"level":"info","message":"Listening on port 3000..."}
+{"level":"info","message":"Connected to MongoDB..."}
+{"level":"info","message":"Listening on port 3000..."}
+{"level":"info","message":"Connected to MongoDB..."}
+{"level":"info","message":"Listening on port 3000..."}
+{"level":"info","message":"Connected to MongoDB..."}
+{"level":"info","message":"Listening on port 3000..."}
+{"level":"info","message":"Connected to MongoDB..."}
+{"level":"info","message":"Listening on port 3000..."}
+{"level":"info","message":"Connected to MongoDB..."}
+{"level":"info","message":"Listening on port 3000..."}
+{"level":"info","message":"Connected to MongoDB..."}
+{"level":"info","message":"Listening on port 3000..."}
+{"level":"info","message":"Connected to MongoDB..."}
+{"level":"info","message":"Listening on port 3000..."}
+{"level":"info","message":"Connected to MongoDB..."}
+{"level":"info","message":"Listening on port 3000..."}
+{"level":"info","message":"Connected to MongoDB..."}
+{"level":"info","message":"Listening on port 3000..."}
+{"level":"info","message":"Connected to MongoDB..."}
+{"level":"info","message":"Listening on port 3000..."}
+{"level":"info","message":"Connected to MongoDB..."}
+{"level":"info","message":"Listening on port 3000..."}
+{"level":"info","message":"Connected to MongoDB..."}
+{"level":"info","message":"Listening on port 3000..."}
+{"level":"info","message":"Connected to MongoDB..."}
+{"level":"info","message":"Listening on port 3000..."}
+{"level":"info","message":"Connected to MongoDB..."}
+{"level":"info","message":"Listening on port 3000..."}
+{"level":"info","message":"Connected to MongoDB..."}
+{"level":"info","message":"Listening on port 3000..."}
+{"level":"info","message":"Connected to MongoDB..."}
+{"level":"info","message":"Listening on port 3000..."}
+{"level":"info","message":"Connected to MongoDB..."}
+{"level":"info","message":"Listening on port 3000..."}
+{"level":"info","message":"Connected to MongoDB..."}
+{"level":"info","message":"Listening on port 3000..."}
+{"level":"info","message":"Connected to MongoDB..."}
+{"level":"info","message":"Listening on port 3000..."}
+{"level":"info","message":"Connected to MongoDB..."}
+{"level":"info","message":"Listening on port 3000..."}
+{"level":"info","message":"Connected to MongoDB..."}
+{"level":"info","message":"Listening on port 3000..."}
+{"level":"info","message":"Connected to MongoDB..."}

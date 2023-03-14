@@ -2,13 +2,18 @@ const {EntryType, validate} = require('../models/entrytype');
 const mongoose = require('mongoose');
 const express = require('express');
 const router = express.Router();
+var cors = require('cors');
 
-router.get('/', async (req, res) => {
+router
+.options("/", cors())
+.get('/', cors(),async (req, res) => {
   const entrytypes = await EntryType.find().sort('name');
   res.send(entrytypes);
 });
 
-router.post('/', async (req, res) => {
+router
+.options("/", cors())
+.post('/', cors(),async (req, res) => {
   const { error } = validate(req.body); 
   if (error) return res.status(400).send(error.details[0].message);
 
@@ -22,7 +27,9 @@ router.post('/', async (req, res) => {
   res.send(entrytype);
 });
 
-router.put('/:id', async (req, res) => {
+router
+.options("/", cors())
+.put('/:id', cors(),async (req, res) => {
   const { error } = validate(req.body); 
   if (error) return res.status(400).send(error.details[0].message);
 
@@ -38,7 +45,9 @@ router.put('/:id', async (req, res) => {
   res.send(entrytype);
 });
 
-router.delete('/:id', async (req, res) => {
+router
+.options("/", cors())
+.delete('/:id', cors(),async (req, res) => {
   const entrytype = await EntryType.findByIdAndRemove(req.params.id);
 
   if (!entrytype) return res.status(404).send('The entrytype with the given ID was not found.');
@@ -46,7 +55,9 @@ router.delete('/:id', async (req, res) => {
   res.send(entrytype);
 });
 
-router.get('/:id', async (req, res) => {
+router
+.options("/", cors())
+.get('/:id', cors(),async (req, res) => {
   const entrytype = await EntryType.findById(req.params.id);
 
   if (!entrytype) return res.status(404).send('The entrytype with the given ID was not found.');
