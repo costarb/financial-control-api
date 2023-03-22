@@ -11,7 +11,178 @@
     "http"
   ],
   "paths": {
+    "/api/cashmovement/": {
+      "options": {
+        "description": "",
+        "parameters": [],
+        "responses": {}
+      },
+      "get": {
+        "description": "",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "example": "any"
+                },
+                "movementDate": {
+                  "example": "any"
+                },
+                "referenceMonth": {
+                  "example": "any"
+                },
+                "value": {
+                  "example": "any"
+                },
+                "cashType": {
+                  "example": "any"
+                },
+                "entryType": {
+                  "example": "any"
+                },
+                "organisation": {
+                  "example": "any"
+                },
+                "userId": {
+                  "example": "any"
+                },
+                "creationDate": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/api/cashmovement/{id}": {
+      "put": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "example": "any"
+                },
+                "movementDate": {
+                  "example": "any"
+                },
+                "referenceMonth": {
+                  "example": "any"
+                },
+                "value": {
+                  "example": "any"
+                },
+                "cashType": {
+                  "example": "any"
+                },
+                "entryType": {
+                  "example": "any"
+                },
+                "organisation": {
+                  "example": "any"
+                },
+                "userId": {
+                  "example": "any"
+                },
+                "updateDate": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      },
+      "delete": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      },
+      "get": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
     "/api/cashtype/": {
+      "options": {
+        "description": "",
+        "parameters": [],
+        "responses": {}
+      },
       "get": {
         "description": "",
         "parameters": [],
@@ -137,6 +308,11 @@
       }
     },
     "/api/customers/": {
+      "options": {
+        "description": "",
+        "parameters": [],
+        "responses": {}
+      },
       "get": {
         "description": "",
         "parameters": [],
@@ -259,6 +435,11 @@
       }
     },
     "/api/entrytype/": {
+      "options": {
+        "description": "",
+        "parameters": [],
+        "responses": {}
+      },
       "get": {
         "description": "",
         "parameters": [],
@@ -381,6 +562,11 @@
       }
     },
     "/api/organisation/": {
+      "options": {
+        "description": "",
+        "parameters": [],
+        "responses": {}
+      },
       "get": {
         "description": "",
         "parameters": [],
