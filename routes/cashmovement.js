@@ -12,6 +12,22 @@ router
     });
 
 router
+    .options("/:startdate/:enddate", cors())
+    .get('/:startdate/:enddate', cors(), async (req, res) => {
+        var query = {movementDate: { $gt: req.params.startdate, $lt: req.params.enddate}}
+        const cashmovements = await CashMovement.find(query).sort('movementDate');
+        res.send(cashmovements);
+    });
+
+    router
+    .options("/:referenceMonth", cors())
+    .get('/:referenceMonth', cors(), async (req, res) => {
+        var query = {referenceMonth: req.params.referenceMonth}
+        const cashmovements = await CashMovement.find(query).sort('referenceMonth');
+        res.send(cashmovements);
+    });
+
+router
     .options("/", cors())
     .post('/', cors(), async (req, res) => {
         try {

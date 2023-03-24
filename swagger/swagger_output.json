@@ -79,6 +79,78 @@
         }
       }
     },
+    "/api/cashmovement/{startdate}/{enddate}": {
+      "options": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "startdate",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "enddate",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {}
+      },
+      "get": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "startdate",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "enddate",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/cashmovement/{referenceMonth}": {
+      "options": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "referenceMonth",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {}
+      },
+      "get": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "referenceMonth",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/cashmovement/{id}": {
       "put": {
         "description": "",
