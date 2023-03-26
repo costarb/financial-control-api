@@ -2,13 +2,18 @@ const {Customer, validate} = require('../models/customer');
 const mongoose = require('mongoose');
 const express = require('express');
 const router = express.Router();
+var cors = require('cors');
 
-router.get('/', async (req, res) => {
+router
+.options("/", cors())
+.get('/', cors(),async (req, res) => {
   const customers = await Customer.find().sort('name');
   res.send(customers);
 });
 
-router.post('/', async (req, res) => {
+router
+.options("/", cors())
+.post('/', cors(),async (req, res) => {
   const { error } = validate(req.body); 
   if (error) return res.status(400).send(error.details[0].message);
 
@@ -22,7 +27,9 @@ router.post('/', async (req, res) => {
   res.send(customer);
 });
 
-router.put('/:id', async (req, res) => {
+router
+.options("/", cors())
+.put('/:id', cors(),async (req, res) => {
   const { error } = validate(req.body); 
   if (error) return res.status(400).send(error.details[0].message);
 
@@ -38,7 +45,9 @@ router.put('/:id', async (req, res) => {
   res.send(customer);
 });
 
-router.delete('/:id', async (req, res) => {
+router
+.options("/", cors())
+.delete('/:id', cors(),async (req, res) => {
   const customer = await Customer.findByIdAndRemove(req.params.id);
 
   if (!customer) return res.status(404).send('The customer with the given ID was not found.');
@@ -46,7 +55,9 @@ router.delete('/:id', async (req, res) => {
   res.send(customer);
 });
 
-router.get('/:id', async (req, res) => {
+router
+.options("/", cors())
+.get('/:id', cors(),async (req, res) => {
   const customer = await Customer.findById(req.params.id);
 
   if (!customer) return res.status(404).send('The customer with the given ID was not found.');
