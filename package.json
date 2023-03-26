@@ -5,8 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "set vidly_jwtPrivateKey=mySecureKey&& nodemon",
     "start-dev": "set vidly_jwtPrivateKey=mySecureKey&& nodemon",
     "swagger-autogen": "node swagger.js"
+  },
+  "engines":{
+    "node": "19.7.0"
   },
   "keywords": [],
   "author": "",
@@ -14,10 +18,12 @@
   "dependencies": {
     "bcrypt": "^5.1.0",
     "body-parser": "^1.20.2",
+    "compression": "^1.7.4",
     "config": "^3.3.9",
     "cors": "^2.8.5",
     "express": "^4.18.2",
     "express-async-errors": "^3.1.1",
+    "helmet": "^6.0.1",
     "joi": "^17.8.3",
     "joi-objectid": "^4.0.2",
     "jsonwebtoken": "^9.0.0",
