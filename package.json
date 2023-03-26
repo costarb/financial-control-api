@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "set vidly_jwtPrivateKey=mySecureKey&& nodemon",
+    "start": "node index.js",
     "start-dev": "set vidly_jwtPrivateKey=mySecureKey&& nodemon",
     "swagger-autogen": "node swagger.js"
   },
