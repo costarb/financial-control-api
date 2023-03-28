@@ -6,13 +6,13 @@ const organisationSchema = new mongoose.Schema({
   name: {
     type: String,
     required: true,
-    minlength: 5,
+    minlength: 3,
     maxlength: 50
   },
   descripton: {
     type: String,
     require: true,
-    minlength: 5,
+    minlength: 3,
     maxlength: 100
   },
   organisationParent : {
@@ -43,6 +43,7 @@ function validateOrganisation(organisation) {
   const schema = Joi.object({
     name: Joi.string().min(3).required(),
     descripton: Joi.string(),
+    organisationParent: Joi.any(),
     isActive: Joi.bool()
   });
 
