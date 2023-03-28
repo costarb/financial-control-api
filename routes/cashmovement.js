@@ -1,4 +1,4 @@
-const { CashMovement, validate } = require('../models/cashmovement');
+const { CashMovement, validate } = require('@models/cashmovement');
 const mongoose = require('mongoose');
 const express = require('express');
 const router = express.Router();

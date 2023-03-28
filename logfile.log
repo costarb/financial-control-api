@@ -301,3 +301,25 @@
 {"level":"error","message":"connect ETIMEDOUT 3.208.191.7:27017 connect ETIMEDOUT 3.208.191.7:27017","reason":{"commonWireVersion":0,"compatible":true,"heartbeatFrequencyMS":10000,"localThresholdMS":15,"logicalSessionTimeoutMinutes":null,"maxElectionId":"7fffffff00000000000000a1","maxSetVersion":7,"servers":{},"setName":"Cluster0-shard-0","stale":false,"type":"ReplicaSetNoPrimary"},"stack":"MongoServerSelectionError: connect ETIMEDOUT 3.208.191.7:27017\n    at Timeout._onTimeout (C:\\Users\\rob_b\\source\\repos\\git\\financial-control-api\\node_modules\\mongodb\\lib\\sdam\\topology.js:277:38)\n    at listOnTimeout (node:internal/timers:568:17)\n    at process.processTimers (node:internal/timers:511:7)"}
 {"level":"error","message":"connect ETIMEDOUT 3.208.191.7:27017 connect ETIMEDOUT 3.208.191.7:27017","reason":{"commonWireVersion":0,"compatible":true,"heartbeatFrequencyMS":10000,"localThresholdMS":15,"logicalSessionTimeoutMinutes":null,"maxElectionId":"7fffffff00000000000000a1","maxSetVersion":7,"servers":{},"setName":"Cluster0-shard-0","stale":false,"type":"ReplicaSetNoPrimary"},"stack":"MongoServerSelectionError: connect ETIMEDOUT 3.208.191.7:27017\n    at Timeout._onTimeout (C:\\Users\\rob_b\\source\\repos\\git\\financial-control-api\\node_modules\\mongodb\\lib\\sdam\\topology.js:277:38)\n    at listOnTimeout (node:internal/timers:568:17)\n    at process.processTimers (node:internal/timers:511:7)"}
 {"level":"info","message":"Connected to MongoDB..."}
+{"level":"info","message":"Listening on port 3000..."}
+{"level":"info","message":"Connected to MongoDB..."}
+{"level":"info","message":"Listening on port 3000..."}
+{"level":"info","message":"Connected to MongoDB..."}
+{"level":"info","message":"Listening on port 3000..."}
+{"level":"info","message":"Connected to MongoDB..."}
+{"level":"info","message":"Listening on port 3000..."}
+{"level":"info","message":"Connected to MongoDB..."}
+{"level":"info","message":"Listening on port 3000..."}
+{"level":"info","message":"Connected to MongoDB..."}
+{"level":"info","message":"Listening on port 3000..."}
+{"level":"info","message":"Connected to MongoDB..."}
+{"level":"info","message":"Listening on port 3000..."}
+{"level":"info","message":"Connected to MongoDB..."}
+{"level":"info","message":"Listening on port 3000..."}
+{"level":"info","message":"Connected to MongoDB..."}
+{"level":"info","message":"Listening on port 3000..."}
+{"level":"info","message":"Connected to MongoDB..."}
+{"level":"info","message":"Listening on port 3000..."}
+{"level":"info","message":"Connected to MongoDB..."}
+{"level":"info","message":"Listening on port 3000..."}
+{"level":"info","message":"Connected to MongoDB..."}
