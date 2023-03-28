@@ -5,13 +5,21 @@ const swaggerUI = require("swagger-ui-express");
 const swaggerFile = require('./swagger/swagger_output.json');
 const bodyParser = require('body-parser');
 const port = process.env.PORT || 3000;
+const moduleAlias = require('module-alias');
 
-require('./startup/logging')();
-require('./startup/routes')(app);
-require('./startup/db')();
-require('./startup/config')();
-require('./startup/validation')();
-require('./startup/prod')(app);
+moduleAlias.addAlias('@config', __dirname + '/config');
+moduleAlias.addAlias('@models', __dirname + '/models');
+moduleAlias.addAlias('@routes', __dirname + '/routes');
+moduleAlias.addAlias('@middleware', __dirname + '/middleware');
+moduleAlias.addAlias('@startup', __dirname + '/startup');
+moduleAlias.addAlias('@swagger', __dirname + '/swagger');
+
+require('@startup/logging')();
+require('@startup/routes')(app);
+require('@startup/db')();
+require('@startup/config')();
+require('@startup/validation')();
+require('@startup/prod')(app);
 
 app.use('/docs', swaggerUI.serve, swaggerUI.setup(swaggerFile));
 app.use(express.json());

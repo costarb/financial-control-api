@@ -9,7 +9,7 @@
     "start-dev": "set vidly_jwtPrivateKey=mySecureKey&& nodemon",
     "swagger-autogen": "node swagger.js"
   },
-  "engines":{
+  "engines": {
     "node": "19.7.0"
   },
   "keywords": [],
@@ -27,6 +27,7 @@
     "joi": "^17.8.3",
     "joi-objectid": "^4.0.2",
     "jsonwebtoken": "^9.0.0",
+    "module-alias": "^2.2.2",
     "mongoose": "^7.0.0",
     "nodemon": "^2.0.20",
     "swagger-autogen": "^2.23.1",
@@ -36,6 +37,10 @@
     "winston-mongodb": "^5.1.1"
   },
   "devDependencies": {
-    "@types/joi": "^17.2.3"
+    "@types/joi": "^17.2.3",
+    "@types/module-alias": "^2.0.1"
+  },
+  "_moduleAliases": {
+    "@models": "models"
   }
 }

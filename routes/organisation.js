@@ -1,4 +1,4 @@
-const {Organisation, validate} = require('../models/organisation'); 
+const {Organisation, validate} = require('@models/organisation'); 
 const mongoose = require('mongoose');
 const express = require('express');
 const router = express.Router();
