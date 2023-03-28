@@ -1,4 +1,4 @@
-const {EntryType, validate} = require('@models/entrytype'); 
+const {EntryType, validate} = require('../models/entryType'); 
 const mongoose = require('mongoose');
 const express = require('express');
 const router = express.Router();
