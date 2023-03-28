@@ -14,6 +14,8 @@ moduleAlias.addAlias('@middleware', __dirname + '/middleware');
 moduleAlias.addAlias('@startup', __dirname + '/startup');
 moduleAlias.addAlias('@swagger', __dirname + '/swagger');
 
+console.log(__dirname + '/swagger');
+
 require('@startup/logging')();
 require('@startup/routes')(app);
 require('@startup/db')();
