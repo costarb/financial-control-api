@@ -39,8 +39,5 @@
   "devDependencies": {
     "@types/joi": "^17.2.3",
     "@types/module-alias": "^2.0.1"
-  },
-  "_moduleAliases": {
-    "@models": "models"
   }
 }
