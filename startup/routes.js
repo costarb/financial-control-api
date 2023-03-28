@@ -1,12 +1,12 @@
 const express = require('express');
-const cashmovement = require(__dirname + '/routes/cashmovement');
-const cashtype = require(__dirname + 'routes/cashtype');
-const customers = require(__dirname + 'routes/customers');
-const entrytype = require(__dirname + 'routes/entrytype');
-const organisation = require(__dirname + 'routes/organisation');
-const users = require(__dirname + 'routes/users');
-const auth = require(__dirname + 'routes/auth');
-const error = require(__dirname + 'middleware/error');
+const cashmovement = require('../routes/cashmovement');
+const cashtype = require('../routes/cashtype');
+const customers = require('../routes/customers');
+const entrytype = require('../routes/entrytype');
+const organisation = require('../routes/organisation');
+const users = require('../routes/users');
+const auth = require('../routes/auth');
+const error = require('../middleware/error');
 
 
 module.exports = function(app){
