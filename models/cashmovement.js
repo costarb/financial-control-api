@@ -60,13 +60,13 @@ const cashMovementSchema = new mongoose.Schema({
             name: {
                 type: String,
                 required: true,
-                minlength: 5,
+                minlength: 3,
                 maxlength: 50
               },
               descripton: {
                 type: String,
                 require: true,
-                minlength: 5,
+                minlength: 3,
                 maxlength: 100
               },
               isActive: {
