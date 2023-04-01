@@ -14,15 +14,15 @@ router
 router
     .options("/:startdate/:enddate", cors())
     .get('/:startdate/:enddate', cors(), async (req, res) => {
-        var query = {movementDate: { $gt: req.params.startdate, $lt: req.params.enddate}}
+        var query = { movementDate: { $gte: req.params.startdate, $lte: req.params.enddate } }
         const cashmovements = await CashMovement.find(query).sort('movementDate');
         res.send(cashmovements);
     });
 
-    router
+router
     .options("/:referenceMonth", cors())
     .get('/:referenceMonth', cors(), async (req, res) => {
-        var query = {referenceMonth: req.params.referenceMonth}
+        var query = { referenceMonth: req.params.referenceMonth }
         const cashmovements = await CashMovement.find(query).sort('referenceMonth');
         res.send(cashmovements);
     });

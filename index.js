@@ -14,14 +14,12 @@ moduleAlias.addAlias('@middleware', __dirname + '/middleware');
 moduleAlias.addAlias('@startup', __dirname + '/startup');
 moduleAlias.addAlias('@swagger', __dirname + '/swagger');
 
-console.log(__dirname + '/swagger');
-
-require('@startup/logging')();
-require('@startup/routes')(app);
-require('@startup/db')();
-require('@startup/config')();
-require('@startup/validation')();
-require('@startup/prod')(app);
+require('./startup/logging')();
+require('./startup/routes')(app);
+require('./startup/db')();
+require('./startup/config')();
+require('./startup/validation')();
+require('./startup/prod')(app);
 
 app.use('/docs', swaggerUI.serve, swaggerUI.setup(swaggerFile));
 app.use(express.json());

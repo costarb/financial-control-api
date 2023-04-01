@@ -151,6 +151,36 @@
         }
       }
     },
+    "/api/cashmovement/{movementDate}": {
+      "options": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "movementDate",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {}
+      },
+      "get": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "movementDate",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/cashmovement/{id}": {
       "put": {
         "description": "",
