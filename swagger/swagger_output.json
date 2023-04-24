@@ -151,6 +151,48 @@
         }
       }
     },
+    "/api/cashmovement/findbycashtypeorganisation/{cashTypeId}/{organisationId}": {
+      "options": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "cashTypeId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "organisationId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {}
+      },
+      "get": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "cashTypeId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "organisationId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/cashmovement/{id}": {
       "put": {
         "description": "",
