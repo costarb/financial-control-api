@@ -1,4 +1,6 @@
 const { CashMovement, validate } = require('@models/cashmovement');
+const { CashType } = require('@models/cashtype');
+const { Organisation } = require('@models/organisation'); 
 const mongoose = require('mongoose');
 const express = require('express');
 const router = express.Router();
@@ -23,6 +25,14 @@ router
     .options("/:referenceMonth", cors())
     .get('/:referenceMonth', cors(), async (req, res) => {
         var query = { referenceMonth: req.params.referenceMonth }
+        const cashmovements = await CashMovement.find(query).sort('referenceMonth');
+        res.send(cashmovements);
+    });
+
+router
+    .options("/findbycashtypeorganisation/:cashTypeId/:organisationId", cors())
+    .get('/findbycashtypeorganisation/:cashTypeId/:organisationId', cors(), async (req, res) => {
+        var query = { "cashType._id": req.params.cashTypeId, "organisation._id": req.params.organisationId }
         const cashmovements = await CashMovement.find(query).sort('referenceMonth');
         res.send(cashmovements);
     });

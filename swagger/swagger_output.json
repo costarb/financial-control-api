@@ -151,12 +151,18 @@
         }
       }
     },
-    "/api/cashmovement/{movementDate}": {
+    "/api/cashmovement/findbycashtypeorganisation/{cashTypeId}/{organisationId}": {
       "options": {
         "description": "",
         "parameters": [
           {
-            "name": "movementDate",
+            "name": "cashTypeId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "organisationId",
             "in": "path",
             "required": true,
             "type": "string"
@@ -168,7 +174,13 @@
         "description": "",
         "parameters": [
           {
-            "name": "movementDate",
+            "name": "cashTypeId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "organisationId",
             "in": "path",
             "required": true,
             "type": "string"
